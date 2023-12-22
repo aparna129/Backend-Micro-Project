@@ -1,0 +1,43 @@
+-
+
+A health API typically refers to an interface provided by a service, application,
+or system that offers endpoints for checking the health and status of that service.
+This API is commonly used to perform health checks, monitor system status, and
+verify if the service is running properly.
+
+The purpose of a health API is to expose endpoints that can be queried to determine
+the operational status of a service. These endpoints might return information indicating
+whether the service is reachable, functioning correctly, and whether its dependencies
+(such as databases, external services, etc.) are also healthy.
+
+-
+
+-
+
+In Express.js, res.status(404) is a method used to set the HTTP status code of the
+response to 404, which stands for "Not Found". It's commonly used to indicate to the
+client (such as a web browser or an API consumer) that the requested resource or
+route was not found on the server. Whenever we enter a route which is not
+present then this middleware will be called .
+
+-
+
+-
+
+const userSchema = new mongoose.Schema({
+fullname: String,
+email: { type: String, unique: true },
+password: String,
+age: Number,
+gender: String,
+mobile: String
+});
+
+const User = mongoose.model('User', userSchema);
+
+We can write userSchema like this also
+
+-
+
+-
+
